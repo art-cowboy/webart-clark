@@ -1,0 +1,52 @@
+@font-face {
+    font-family:metal;
+    src: url(fonts/Baby\ Metal.ttf);
+}
+
+@keyframes head-color {
+    0%{
+       color: powderblue;
+    }
+    50%{
+        color:springgreen;
+    }
+    100%{
+        color: powderblue;
+     }
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    background-image: url(gifs/bg/matrix.gif);
+    background-repeat: repeat;
+}
+
+body{
+    background-color:plum;
+}
+header{
+    width: max-content;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+h1{
+    animation: head-color 1s infinite;
+    /* color: powderblue; */
+    font-family: metal;
+    text-align: center;
+
+}
+
+video{
+    max-width: 600px;
+
+}
+
+.inline{
+    display: inline;
+}
