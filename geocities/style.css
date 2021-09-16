@@ -1,17 +1,28 @@
 @font-face {
     font-family:metal;
-    src: url(fonts/Baby\ Metal.ttf);
+    src: url(fonts/baby-metal.ttf);
+}
+@font-face {
+    font-family:matrix;
+    src: url(fonts/matrix.ttf);
 }
 
 @keyframes head-color {
     0%{
        color: powderblue;
     }
-    50%{
-        color:springgreen;
+
+    100%{
+        color: darkorchid;
+
+     }
+}
+@keyframes head-move {
+    0%{
+        left:0vw;
     }
     100%{
-        color: powderblue;
+        left: calc(100vw - 500px)
      }
 }
 
@@ -21,32 +32,95 @@
 }
 
 html{
-    background-image: url(gifs/bg/matrix.gif);
+    background-image: url(gifs/bg/space2.gif);
     background-repeat: repeat;
 }
 
 body{
-    background-color:plum;
-}
+    height: 100vh;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
 header{
     width: max-content;
-    margin-left:auto;
-    margin-right: auto;
+    background-image: radial-gradient(rgb(187, 207, 245), cornflowerblue,transparent, transparent);
+    position: fixed;
+    bottom: 0px;
+    animation: head-move 6s infinite alternate linear;
+    z-index: 4;
+}
+
+main{
+   display: grid;
+   grid-template-columns: auto auto;
+   grid-template-rows: auto auto;
 }
 
 h1{
-    animation: head-color 1s infinite;
+    font-size: 5rem;
+    animation: head-color .5s infinite alternate;
     /* color: powderblue; */
-    font-family: metal;
+    font-family: matrix;
     text-align: center;
-
 }
 
-video{
-    max-width: 600px;
-
+#one{
+    background-image: url(gifs/edgy/mg-trans.gif);
+ 
 }
+
+#two{
+    background-image: url(gifs/fairy/fairy-uni.gif);
+}
+
+#three{
+    background-image: url(gifs/moon/moon-prism.gif);
+}
+
+#four{
+    background-image: url();
+}
+
+#circle {
+    top: calc(50% - 5rem);
+    left: calc(50% - 15rem);
+    height: 30rem;
+    width: 30rem;
+    background-image:radial-gradient(powderblue, darkorchid, transparent,transparent);
+    border-radius: 50%;
+    /* border: lawngreen .5rem groove; */
+    z-index: 3;
+    position: absolute;
+  }
 
 .inline{
     display: inline;
+}
+
+.sm-img{
+    width: 5em;
+}
+
+.item{
+    background-size: 100px auto;
+    padding: 50%;
+    margin: 1rem;
+}
+
+#one-one{
+    padding: auto;
+}
+
+#two-one{
+    padding: auto;
+}
+
+#three-one{
+    padding: auto;
+}
+
+#four-one{
+    padding: auto;
 }
