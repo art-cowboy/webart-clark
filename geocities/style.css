@@ -26,6 +26,15 @@
      }
 }
 
+@keyframes foot-move {
+    0%{
+        left: calc(100vw - 500px)
+    }
+    100%{
+        left:0vw;
+     }
+}
+
 *{
     padding: 0px;
     margin: 0px;
@@ -56,6 +65,15 @@ main{
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
+}
+
+footer{
+    width: max-content;
+    background-image: radial-gradient(rgb(187, 207, 245), cornflowerblue,transparent, transparent);
+    position: fixed;
+    top: 0px;
+    animation: foot-move 6s infinite alternate linear;
+    z-index: 4;
 }
 
 h1{
@@ -91,6 +109,7 @@ h2{
 
 #one-one{
     padding: auto;
+    width: 3rem;
 }
 
 #two-one{
