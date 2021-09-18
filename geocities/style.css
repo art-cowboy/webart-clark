@@ -107,21 +107,17 @@ h2{
     background-image: url(gifs/icons/cd2.gif);
 }
 
-#one-one{
-    padding: auto;
-    width: 3rem;
+.one-one{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5rem;
 }
 
-#two-one{
-    padding: auto;
+.one-one, img{
+    width: 15rem;
 }
-
-#three-one{
-    padding: auto;
-}
-
-#four-one{
-    padding: auto;
+.one-one, video{
+    width: 12rem;
 }
 
 .inline{
