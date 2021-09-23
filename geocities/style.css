@@ -227,7 +227,7 @@ a{
     display: none;
     position: absolute;
     bottom: 2rem;
-    padding: 10rem .5rem 6rem .5rem;
+    padding: 6rem .4rem 1rem .4rem;
     /* height: 30rem;
     width: 20rem; */
     background-image: linear-gradient(rgb(47, 130, 255) 1% , blue 15%, blue 90%, rgb(13, 0, 133));
@@ -235,8 +235,31 @@ a{
     border: 1px black solid;
 }
 .menu{
+    border: 1px black solid;
     z-index: 2;
-    background-color: snow;
+    background-image: linear-gradient(to right, snow 50%, rgb(178, 199, 236) 51%);
+    padding: 5rem;
+}
+
+.profile{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: black 1px 1px;
+}
+
+.log{
+    padding-top: 1rem;
+    line-height: 1rem;
+    font-size: .5rem;
+    color: white;
+    font-family: pixel;
+    position: relative;
+}
+.log img{
+    border: 1px blue dashed;
 }
 
 h3{
@@ -270,10 +293,18 @@ h3{
     border: 1px black dashed;
     cursor: url(cursor/Cursor_15.cur), auto;
 }
+.log img:active{
+    border: 1px black dashed;
+    cursor: url(cursor/Cursor_15.cur), auto;
+}
 
 .rrr{
     position: absolute;
     width: 2rem;
     bottom: 3rem;
     right: 2rem;
+}
+
+.rrr:hover{
+    cursor: url(cursor/Cursor_15.cur),auto;
 }
