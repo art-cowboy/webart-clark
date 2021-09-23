@@ -44,10 +44,28 @@
         width: 100vw;
         height: 100vh;
     }
+    30%{
+        visibility: visible;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(black,black);
+        width: 100vw;
+        height: 100vh;
+    }
 
     40%{
         visibility: visible;
-        background-image: radial-gradient( black, black);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../pics/glitch.gif);
+        width: 100vw;
+        height: 100vh;
+    }
+    45%{
+        visibility: visible;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(black,black);
         width: 100vw;
         height: 100vh;
     }
@@ -60,18 +78,36 @@
         width: 100vw;
         height: 100vh;
     }
+    55%{
+        visibility: visible;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(black,black);
+        width: 100vw;
+        height: 100vh;
+    }
     60%{
         visibility: visible;
-        background-image: radial-gradient(black, black);
-        visibility: visible;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../pics/glitch.gif);
         width: 100vw;
         height: 100vh;
     }
 
-    99%{
+    98%{
         visibility: visible;
-        background-image: radial-gradient(black, black);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../pics/glitch.gif);
+        width: 100vw;
+        height: 100vh;
+    }
+    98%{
         visibility: visible;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(black,black);
         width: 100vw;
         height: 100vh;
     }
