@@ -251,6 +251,11 @@ h3{
     top: 3rem;
     position: absolute;
     right: 3rem;
+    height: max-content;
+    /* cursor: url(cursor/Cursor_15.cur), auto; */
+}
+.ie img{
+    cursor: url(cursor/Cursor_15.cur), auto;
 }
 
 .ie{
