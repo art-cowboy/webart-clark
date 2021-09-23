@@ -266,8 +266,9 @@ h3{
     font-family: pixel;
     text-align: center;
     font-size: .5rem;
-    color: black;
+    color: white;
     opacity: .7;
+    text-shadow: black 1px 1px;
 }
 
 .icons{
