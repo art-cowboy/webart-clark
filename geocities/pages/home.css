@@ -17,7 +17,7 @@
 
      }
 }
-@keyframes head-move {
+@keyframes foot-move {
     0%{
         left:0vw;
     }
@@ -26,13 +26,61 @@
      }
 }
 
-@keyframes foot-move {
+@keyframes head-move {
     0%{
         left: calc(100vw - 500px)
     }
     100%{
         left:0vw;
      }
+}
+
+@keyframes ani {
+    0%{
+        visibility: visible;
+        background-image:url(../pics/bliss.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    40%{
+        visibility: visible;
+        background-image: radial-gradient( black, black);
+        width: 100vw;
+        height: 100vh;
+    }
+
+    50%{
+        visibility: visible;
+        background-image: url(../pics/bliss.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;
+    }
+    60%{
+        visibility: visible;
+        background-image: radial-gradient(black, black);
+        visibility: visible;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    99%{
+        visibility: visible;
+        background-image: radial-gradient(black, black);
+        visibility: visible;
+        width: 100vw;
+        height: 100vh;
+    }
+    100%{
+        visibility: collapse;
+        width: 0vw;
+        height: 0vh;
+    }
+    
 }
 
 *{
@@ -90,6 +138,17 @@ h2{
     border-radius: 50%;
 }
 
+a{
+    text-decoration: inherit;
+    color: inherit;
+}
+
+#ani{
+    position: fixed;
+    animation: ani 5s 1;
+    z-index: 10;
+}
+
 #one{
     background-image: url(../gifs/edgy/anitorch.gif);
  
@@ -143,4 +202,11 @@ h2{
     left: calc(50% - 10rem);
     background-image: radial-gradient(powderblue,darkorchid,transparent,transparent);
     border-radius: 50%;
+}
+
+.off{
+    z-index: 5;
+    padding: 1rem;
+    width: 2rem;
+    position: absolute;
 }
