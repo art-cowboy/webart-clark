@@ -1,0 +1,146 @@
+@font-face {
+    font-family:metal;
+    src: url(f../onts/baby-metal.ttf);
+}
+@font-face {
+    font-family:matrix;
+    src: url(../fonts/matrix.ttf);
+}
+
+@keyframes head-color {
+    0%{
+       color: powderblue;
+    }
+
+    100%{
+        color: darkorchid;
+
+     }
+}
+@keyframes head-move {
+    0%{
+        left:0vw;
+    }
+    100%{
+        left: calc(100vw - 500px)
+     }
+}
+
+@keyframes foot-move {
+    0%{
+        left: calc(100vw - 500px)
+    }
+    100%{
+        left:0vw;
+     }
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    background-image: url(../gifs/bg/space2.gif);
+    background-repeat: repeat;
+}
+
+body{
+    background-image: radial-gradient(transparent,transparent,darkorchid);
+} 
+
+header{
+    width: max-content;
+    background-image: radial-gradient(rgb(187, 207, 245), cornflowerblue,transparent, transparent);
+    position: fixed;
+    bottom: 0px;
+    animation: head-move 6s infinite alternate linear;
+    z-index: 4;
+}
+
+main{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+footer{
+    width: max-content;
+    background-image: radial-gradient(rgb(187, 207, 245), cornflowerblue,transparent, transparent);
+    position: fixed;
+    top: 0px;
+    animation: foot-move 6s infinite alternate linear;
+    z-index: 4;
+}
+
+h1{
+    font-size: 5rem;
+    animation: head-color .5s infinite alternate;
+    /* color: powderblue; */
+    font-family: matrix;
+    text-align: center;
+}
+h2{
+    color: white;
+    text-align: center;
+    padding-top: 14rem;
+    border-radius: 50%;
+}
+
+#one{
+    background-image: url(../gifs/edgy/anitorch.gif);
+ 
+}
+
+#two{
+    background-image: url(../gifs/pretty/spinheart.gif);
+}
+
+#three{
+    background-image: url(../gifs/weird/discoball.gif);
+}
+
+#four{
+    background-image: url(../gifs/icons/cd2.gif);
+}
+
+.one-one{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5rem;
+}
+
+.one-one, img{
+    width: 15rem;
+}
+.one-one, video{
+    width: 12rem;
+}
+
+.inline{
+    display: inline;
+}
+
+.sm-img{
+    width: 5em;
+}
+
+.item{
+    width: 24rem;
+    height: 24rem;
+    margin: 1rem;
+    border-radius: 50%;
+}
+
+.mid{
+    height: 10rem;
+    width:20rem;
+    position: absolute;
+    top: 20rem;
+    left: calc(50% - 10rem);
+    background-image: radial-gradient(powderblue,darkorchid,transparent,transparent);
+    border-radius: 50%;
+}

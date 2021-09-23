@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    cursor: url(../geocities/cursor/CursorsXP.cur), auto;
 }
 
 body{
@@ -15,6 +16,7 @@ body{
 a{
     color: inherit;
     text-decoration: inherit;
+    cursor: url(../geocities/cursor/Cursor_15.cur), auto;
 }
 .start-bar{
     left: 0;
@@ -32,6 +34,7 @@ a{
 }
 
 .error-box{
+    max-width: 35rem;
     position: relative;
     display: block;
 }
@@ -109,6 +112,7 @@ a{
 }
 
 .okay{
+    cursor: url(../geocities/cursor/Cursor_15.cur), auto;
     font-weight: lighter;
     position: relative;
     background-color: snow;
