@@ -37,6 +37,7 @@ a{
 }
 
 .error{
+    box-sizing: unset;
     z-index: 0;
     width: 1.5rem;
     height: 1.5rem;
@@ -78,9 +79,9 @@ a{
 }
 
 .ex{
+    box-sizing: unset;
     right: .5rem;
     top: .25rem;
-    /* float: right; */
     position: absolute;
     width: 1.5rem;
     height: 1.5rem;
@@ -128,7 +129,6 @@ a{
     color: black;
     border: 3px double black;
 }
-
 
 .circle{
     z-index: 2;
