@@ -34,5 +34,6 @@ video{
     animation: gay 10s infinite alternate linear;
     position: absolute;
     z-index: 3;
+    cursor: url(gay.cur), auto;
 }
 
