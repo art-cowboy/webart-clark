@@ -1,0 +1,38 @@
+*{
+    padding:0;
+    margin: 0;
+}
+@keyframes gay {
+    0%{
+        top: 0;
+        left:0;
+    }
+    50%{
+        left: calc(100vw - 144px);
+        top: 50vh;
+    }
+    100%{
+        top: calc(100vh - 96px);
+        left: 0;
+    }
+}
+
+html{
+    background-color: mediumpurple;
+}
+
+body{
+    position: relative;
+}
+
+video{
+    width: 100%;
+    z-index: 0;
+    position: fixed;
+}
+.gay{
+    animation: gay 10s infinite alternate linear;
+    position: absolute;
+    z-index: 3;
+}
+
