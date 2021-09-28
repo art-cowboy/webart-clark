@@ -35,7 +35,7 @@
      }
 }
 
-/* @keyframes ani {
+@keyframes ani {
     0%{
         visibility: visible;
         background-image:url(../pics/bliss.jpg);
@@ -117,7 +117,7 @@
         height: 0vh;
     }
     
-} */
+}
 
 *{
     padding: 0px;
