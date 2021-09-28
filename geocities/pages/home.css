@@ -192,19 +192,39 @@ a{
 
 #one{
     background-image: url(../gifs/edgy/anitorch.gif);
+    cursor: url(../cursor/not_set.cur), auto;
 }
 
 #two{
     background-image: url(../gifs/pretty/spinheart.gif);
+    cursor: url(../cursor/heart.cur), auto;
 }
 
 #three{
     background-image: url(../gifs/weird/discoball.gif);
+    cursor: url(../cursor/smile.cur), auto;
 }
 
 #four{
     background-image: url(../gifs/icons/cd2.gif);
+    cursor: url(../cursor/gay.cur), auto;
 }
+#one-two{
+    background-image:url(../gifs/weird/greenguy.gif) ;
+}
+#two-two{
+    background-image:url(../gifs/edgy/fire.gif) ;
+    background-size: 5rem;
+}
+#three-two{
+    background-image: url(../gifs/icons/trans.gif);
+    background-size: 10rem;
+}
+#four-two{
+    background-image: url(../gifs/fairy/fairy-green.gif);
+    background-size: 4rem;
+}
+
 
 .one-one{
     position: absolute;
@@ -252,8 +272,15 @@ a{
 }
 
 .off{
-    z-index: 5;
+    box-sizing: unset;
+    z-index: 6;
     padding: 1rem;
     width: 2rem;
     position: absolute;
+}
+
+.size{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
