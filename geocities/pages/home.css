@@ -35,7 +35,7 @@
      }
 }
 
-@keyframes ani {
+/* @keyframes ani {
     0%{
         visibility: visible;
         background-image:url(../pics/bliss.jpg);
@@ -117,11 +117,12 @@
         height: 0vh;
     }
     
-}
+} */
 
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 html{
@@ -131,6 +132,8 @@ html{
 
 body{
     background-image: radial-gradient(transparent,transparent,darkorchid);
+    width: 100vw;
+    height:100vh;
 } 
 
 header{
@@ -143,6 +146,8 @@ header{
 }
 
 main{
+    position: relative;
+    height: 100vh;
     margin-left: auto;
     margin-right: auto;
     max-width: 50rem;
@@ -187,7 +192,6 @@ a{
 
 #one{
     background-image: url(../gifs/edgy/anitorch.gif);
- 
 }
 
 #two{
@@ -203,16 +207,20 @@ a{
 }
 
 .one-one{
+    position: absolute;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .one-one, img{
-    width: 15rem;
+    width: 100%;
 }
 .one-one, video{
-    width: 12rem;
+    width: 75%;
+    border-radius: 100%;
 }
 
 .inline{
@@ -224,18 +232,21 @@ a{
 }
 
 .item{
-    width: 24rem;
-    height: 24rem;
+    position: relative;
+    /* width: 100%;
+    height: 100%; */
     margin: 1rem;
     border-radius: 50%;
 }
 
 .mid{
+    z-index: 5;
     height: 10rem;
     width:20rem;
     position: absolute;
-    top: 20rem;
-    left: calc(50% - 10rem);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
     background-image: radial-gradient(powderblue,darkorchid,transparent,transparent);
     border-radius: 50%;
 }
